@@ -1,13 +1,98 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Michroma', 'Inter', 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #e6f0ff;
+  background: radial-gradient(1200px 800px at 80% -10%, rgba(80,120,255,0.25), rgba(10,15,40,1) 60%),
+              radial-gradient(1000px 700px at 20% -20%, rgba(0,180,255,0.15), rgba(5,8,20,1) 60%),
+              #040815;
+  overflow-x: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* { box-sizing: border-box; }
+
+/* Global app layout */
+.app-root {
+  position: relative;
+  min-height: 100vh;
 }
+
+.page-content {
+  position: relative;
+  z-index: 2;
+  padding-top: 88px; /* space for floating navbar */
+}
+
+/* Glass utility */
+.glass {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35), 0 0 0 1px rgba(255,255,255,0.06) inset;
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+/* Floating navbar hovering effect */
+.floating {
+  animation: floatY 6s ease-in-out infinite;
+}
+
+@keyframes floatY {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+/* Links */
+a { color: #9cc4ff; text-decoration: none; }
+a:hover { color: #cfe3ff; }
+
+/* Hover glow + zoom for cards */
+.glass:hover { transform: translateY(-2px) scale(1.02); box-shadow: 0 20px 50px rgba(0,0,0,0.45), 0 0 20px rgba(140,190,255,0.25); }
+
+/* Inputs focus glow */
+input.glass:focus, textarea.glass:focus { outline: none; box-shadow: 0 0 0 2px rgba(0,200,255,0.6); }
+
+/* Zero-gravity default for headings and paragraphs */
+h1, h2, h3, p, .nav-link { animation: floatY 8s ease-in-out infinite; }
+
+/* Ripple starburst on click for .glass */
+.glass:active { animation: ripple 0.6s ease; }
+@keyframes ripple { to { box-shadow: 0 0 0 14px rgba(140,190,255,0); } }
+
+/* Freefall mode hides original text while clones fall */
+.freefall-mode body * { visibility: visible; }
+.freefall-overlay { pointer-events: none; }
+
+/* Sections spacing */
+.section {
+  padding: 60px 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Starry subtle overlay (used by footer background accent as well) */
+.stars {
+  position: absolute;
+  inset: 0;
+  background: transparent url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><g fill="white" fill-opacity="0.35"><circle cx="10" cy="20" r="0.5"/><circle cx="200" cy="100" r="0.7"/><circle cx="400" cy="60" r="0.6"/><circle cx="800" cy="200" r="0.5"/><circle cx="1200" cy="120" r="0.6"/></g></svg>') repeat;
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+/* Section headings */
+h1, h2, h3 { color: #eaf2ff; margin: 0 0 16px; }
+p { color: #c6d8ff; line-height: 1.7; }
+
+/* Michroma for headings */
+h1, h2, h3, .michroma { font-family: 'Michroma', 'Poppins', 'Inter', system-ui, sans-serif; letter-spacing: 0.06em; }
+
+/* Card spacecraft float */
+.card-float { animation: floatY 9s ease-in-out infinite; }
