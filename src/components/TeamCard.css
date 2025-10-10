@@ -1,0 +1,33 @@
+.team-card {
+  display: grid;
+  grid-template-rows: 220px auto;
+  gap: 14px;
+}
+
+.team-card__image-wrap {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.team-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.team-card__info {
+  display: grid;
+  gap: 6px;
+}
+
+.team-card__name { margin: 0; font-size: 18px; }
+.team-card__role { color: #9fb7e6; font-size: 14px; }
+.team-card__desc { margin: 0; color: #c6d8ff; font-size: 14px; line-height: 1.6; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+@media (min-width: 1024px) {
+  .team-card { grid-template-rows: 260px auto; }
+}
+
+

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaLinkedin, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FaLinkedin, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -16,9 +16,8 @@ const Footer = () => {
             </div>
           </div>
           <div style={{display:'flex', gap:14}}>
-            <SocialIcon href="https://www.linkedin.com" label="LinkedIn"><FaLinkedin /></SocialIcon>
-            <SocialIcon href="https://www.instagram.com" label="Instagram"><FaInstagram /></SocialIcon>
-            <SocialIcon href="https://twitter.com" label="Twitter"><FaTwitter /></SocialIcon>
+            <SocialIcon href="https://www.linkedin.com/company/ieee-grss-muj/" label="LinkedIn"><FaLinkedin /></SocialIcon>
+            <SocialIcon href="https://www.instagram.com/ieee.grss_muj/" label="Instagram"><FaInstagram /></SocialIcon>
           </div>
         </div>
       </div>

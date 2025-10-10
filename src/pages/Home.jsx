@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import SpotlightCard from '../components/SpotlightCard';
 import FallingText from '../components/FallingText';
-import DomeGallerySection from '../components/DomeGallery';
+import ImageGallery from '../components/ImageGallery';
 
 const Home = () => {
   const [gravityMode, setGravityMode] = useState(false);
@@ -56,7 +56,7 @@ const Home = () => {
     <section className="section" style={{paddingTop:60}}>
       <div className="container" style={{display:'grid', gap:18}}>
         <h2 className="michroma" style={{textAlign:'center'}}>Highlights</h2>
-        <DomeGallerySection />
+        <ImageGallery />
       </div>
     </section>
 

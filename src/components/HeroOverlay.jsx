@@ -35,22 +35,7 @@ const HeroOverlay = () => {
       >
         IEEE GRSS MUJ
       </motion.h1>
-      <div style={{position:'absolute', bottom:24, left:0, right:0, display:'grid', placeItems:'center'}}>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.0, duration: 0.8 }}
-          style={{ color:'#cfe3ff', fontSize:12, letterSpacing:2 }}
-        >
-          SCROLL
-        </motion.div>
-        <motion.div
-          initial={{ y: -6, opacity: 0.7 }}
-          animate={{ y: 6, opacity: 1 }}
-          transition={{ repeat: Infinity, repeatType: 'reverse', duration: 1.2 }}
-          style={{ width: 2, height: 18, background:'#9cc4ff', marginTop:6, borderRadius:2 }}
-        />
-      </div>
+      {null}
       <style>{`
         .floaty { animation: floatY 8s ease-in-out infinite; }
         .hover-shimmer { position: relative; }
