@@ -4,8 +4,7 @@ import './index.css';
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import BackgroundSpline from './components/BackgroundSpline';
-import HeroOverlay from './components/HeroOverlay';
+import BackgroundCssGlobe from './components/BackgroundCssGlobe';
 import CursorFX from './components/CursorFX';
 import Loader from './components/Loader';
 
@@ -20,8 +19,7 @@ const App = () => {
     <Router>
       <div className="app-root">
         <Loader />
-        <BackgroundSpline />
-        <HeroOverlay />
+        <BackgroundCssGlobe />
         <Navbar />
         <main className="page-content">
           <Routes>

@@ -15,7 +15,29 @@ const Home = () => {
 
   return (
     <>
-    <section className="section" style={{paddingTop: '90vh'}}>
+    {/* Hero section: centered title that scrolls with page, appears in front initially */}
+    <section className="section" style={{minHeight:'100vh', display:'grid', placeItems:'center'}}>
+      <div className="container" style={{display:'grid', gap:24, textAlign:'center'}}>
+        <motion.h1
+          initial={{ opacity: 0, y: 12, scale: 0.985 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ duration: 0.8, ease: 'easeOut' }}
+          className="michroma"
+          style={{
+            fontSize: 'clamp(36px, 8vw, 80px)',
+            color: '#eaf2ff',
+            textShadow: '0 0 20px rgba(120,170,255,0.6), 0 0 40px rgba(70,120,255,0.35)'
+          }}
+        >
+          IEEE GRSS MUJ
+        </motion.h1>
+        <motion.p initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.15, duration:0.6}}>
+          Advancing remote sensing through innovation, education, and community.
+        </motion.p>
+      </div>
+    </section>
+
+    <section className="section" style={{paddingTop:60}}>
       <div className="container" style={{display:'grid', gap:36}}>
         {!gravityMode ? (
           <SpotlightCard style={{padding:'34px 28px'}}>
