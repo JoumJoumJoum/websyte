@@ -127,7 +127,7 @@ const Home = () => {
           <p>Join our chapter, participate in events, and collaborate on real-world geospatial challenges.</p>
           <div style={{marginTop:16}}>
             <a
-              href="https://media.discordapp.net/attachments/1070002730493550642/1426187521473118329/image.png?ex=68ea5022&is=68e8fea2&hm=2ed6c53b6e3f74e48cce719f9d43f1216bbefc8760cb03e70286c34441b56bc7&=&format=webp&quality=lossless&width=346&height=319"
+              href="google.com"
               target="_blank"
               rel="noopener noreferrer"
               className="michroma"
