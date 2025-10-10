@@ -127,7 +127,7 @@ const Home = () => {
           <p>Join our chapter, participate in events, and collaborate on real-world geospatial challenges.</p>
           <div style={{marginTop:16}}>
             <a
-              href="www.google.com"
+              href="https://www.google.com"
               target="_blank"
               rel="noopener noreferrer"
               className="michroma"
