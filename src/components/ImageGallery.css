@@ -4,7 +4,7 @@
 
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 18px;
 }
 
@@ -16,13 +16,18 @@
 
 .image-card .image {
   width: 100%;
-  height: 260px;
+  height: 220px;
   display: block;
   object-fit: cover;
 }
 
 @media (min-width: 1024px) {
   .image-card .image { height: 300px; }
+}
+
+@media (max-width: 480px) {
+  .image-grid { gap: 12px; }
+  .image-card .image { height: 180px; }
 }
 
 

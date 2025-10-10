@@ -96,3 +96,17 @@ h1, h2, h3, .michroma { font-family: 'Michroma', 'Poppins', 'Inter', system-ui, 
 
 /* Card spacecraft float */
 .card-float { animation: floatY 9s ease-in-out infinite; }
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .section { padding: 40px 14px; }
+  .page-content { padding-top: 76px; }
+  h1 { font-size: 28px; }
+  h2 { font-size: 22px; }
+  h3 { font-size: 18px; }
+}
+
+@media (max-width: 480px) {
+  .section { padding: 32px 12px; }
+  .page-content { padding-top: 70px; }
+}

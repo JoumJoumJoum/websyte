@@ -7,8 +7,6 @@ import Footer from './components/Footer';
 import BackgroundSpline from './components/BackgroundSpline';
 import HeroOverlay from './components/HeroOverlay';
 import CursorFX from './components/CursorFX';
-import RocketButton from './components/RocketButton';
-import FreefallOverlay from './components/FreefallOverlay';
 import Loader from './components/Loader';
 
 import Home from './pages/Home';
@@ -36,8 +34,6 @@ const App = () => {
         </main>
         <Footer />
         <CursorFX />
-        <RocketButton onActivate={() => window.dispatchEvent(new CustomEvent('rocket-gravity'))} />
-        <FreefallOverlay />
       </div>
     </Router>
   );
