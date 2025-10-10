@@ -125,6 +125,26 @@ const Home = () => {
         <SpotlightCard>
           <h2 className="michroma">Get Involved</h2>
           <p>Join our chapter, participate in events, and collaborate on real-world geospatial challenges.</p>
+          <div style={{marginTop:16}}>
+            <a
+              href="https://media.discordapp.net/attachments/1070002730493550642/1426187521473118329/image.png?ex=68ea5022&is=68e8fea2&hm=2ed6c53b6e3f74e48cce719f9d43f1216bbefc8760cb03e70286c34441b56bc7&=&format=webp&quality=lossless&width=346&height=319"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="michroma"
+              style={{
+                display:'inline-block',
+                padding:'12px 18px',
+                borderRadius:10,
+                color:'#eaf2ff',
+                background:'linear-gradient(135deg, rgba(20,40,120,0.55), rgba(10,20,60,0.55))',
+                border:'1px solid rgba(160,200,255,0.28)',
+                boxShadow:'0 10px 30px rgba(0,0,0,0.45), 0 0 18px rgba(120,170,255,0.18) inset',
+                backdropFilter:'blur(10px)'
+              }}
+            >
+              Join now
+            </a>
+          </div>
         </SpotlightCard>
       </div>
     </section>
