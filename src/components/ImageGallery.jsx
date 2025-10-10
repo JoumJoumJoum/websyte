@@ -9,6 +9,7 @@ const IMAGES = [
   { src: '/images/image3.png', alt: 'Gallery image 3' },
   { src: '/images/image4.png', alt: 'Gallery image 4' },
   { src: '/images/image5.png', alt: 'Gallery image 5' },
+  { src: '/images/image6.png', alt: 'Gallery image 6' },
 ];
 
 export default function ImageGallery({ images = IMAGES }) {
