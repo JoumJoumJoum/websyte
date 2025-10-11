@@ -37,33 +37,6 @@ const About = () => {
             </motion.div>
           ))}
         </div>
-        <div style={{marginTop:32, textAlign:'center'}}>
-          <button
-            style={{
-              background:'#ccc',
-              color:'#888',
-              border:'none',
-              padding:'12px 32px',
-              borderRadius:'8px',
-              cursor:'not-allowed',
-              fontSize:'1.1rem',
-              fontWeight:'bold',
-              position:'relative',
-              transition:'background 0.2s',
-            }}
-            disabled
-            onMouseOver={e => {
-              e.target.setAttribute('data-hover', 'true');
-              e.target.textContent = 'Coming Soon';
-            }}
-            onMouseOut={e => {
-              e.target.removeAttribute('data-hover');
-              e.target.textContent = 'Join Now';
-            }}
-          >
-            Join Now
-          </button>
-        </div>
       </div>
     </section>
   );

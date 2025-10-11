@@ -128,19 +128,26 @@ const Home = () => {
           <div style={{marginTop:16}}>
             <a
               href="https://www.google.com"
-              target="_blank"
-              rel="noopener noreferrer"
               className="michroma"
               style={{
                 display:'inline-block',
                 padding:'12px 18px',
                 borderRadius:10,
-                color:'#eaf2ff',
-                background:'linear-gradient(135deg, rgba(20,40,120,0.55), rgba(10,20,60,0.55))',
-                border:'1px solid rgba(160,200,255,0.28)',
-                boxShadow:'0 10px 30px rgba(0,0,0,0.45), 0 0 18px rgba(120,170,255,0.18) inset',
-                backdropFilter:'blur(10px)'
+                color:'#bfcbe0',
+                background:'linear-gradient(135deg, rgba(60,80,120,0.35), rgba(30,40,60,0.35))',
+                border:'1px solid rgba(160,200,255,0.18)',
+                boxShadow:'0 10px 30px rgba(0,0,0,0.25), 0 0 18px rgba(120,170,255,0.10) inset',
+                backdropFilter:'blur(10px)',
+                cursor:'not-allowed',
+                pointerEvents:'none',
+                fontWeight:'bold',
+                fontSize:'1.1rem',
+                position:'relative',
+                transition:'background 0.2s',
               }}
+              onMouseOver={e => { e.target.textContent = 'Coming Soon'; }}
+              onMouseOut={e => { e.target.textContent = 'Join now'; }}
+              aria-disabled="true"
             >
               Join now
             </a>
