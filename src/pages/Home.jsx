@@ -18,19 +18,21 @@ const Home = () => {
     {/* Hero section: centered title that scrolls with page, appears in front initially */}
     <section className="section" style={{minHeight:'100vh', display:'grid', placeItems:'center'}}>
       <div className="container" style={{display:'grid', gap:24, textAlign:'center'}}>
-        <motion.h1
+        <motion.img
           initial={{ opacity: 0, y: 12, scale: 0.985 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
-          className="michroma"
+          src="/images/logo.png" // Update with your image filename
+          alt="IEEE GRSS MUJ Logo"
           style={{
-            fontSize: 'clamp(36px, 8vw, 80px)',
-            color: '#eaf2ff',
-            textShadow: '0 0 20px rgba(120,170,255,0.6), 0 0 40px rgba(70,120,255,0.35)'
+            maxWidth: '720px',
+            width: '80vw',
+            margin: '0 auto',
+            display: 'block',
+            marginBottom: '-60px'
+            //    filter: 'drop-shadow(0 0 20px rgba(120,170,255,0.6))'
           }}
-        >
-          IEEE GRSS MUJ
-        </motion.h1>
+        />
         <motion.p initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.15, duration:0.6}}>
           Advancing remote sensing through innovation, education, and community.
         </motion.p>
