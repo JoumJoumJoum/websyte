@@ -88,7 +88,7 @@ const Home = () => {
       <div className="container" style={{display:'grid', gap:18}}>
         <h2 className="michroma">Vision & Mission</h2>
         <div style={{display:'grid', gridTemplateColumns:'repeat(auto-fit, minmax(280px, 1fr))', gap:16}}>
-          {[{t:'Education',d:'Host lectures and workshops to educate students in remote sensing and EO.'},{t:'Research',d:'Collaborate on research projects leveraging satellite data and geospatial analysis.'},{t:'Community',d:'Grow a strong community through events, mentoring, and outreach.'}].map((c,i)=>(
+          {[{t:'Education',d:'Host lectures and workshops to educate students in remote sensing and EO.'},{t:'Research',d:'Collaborate on research projects leveraging satellite data and geospatial ana[...]
             <motion.div key={c.t} initial={{opacity:0,y:16}} whileInView={{opacity:1,y:0}} viewport={{once:true}} transition={{delay:0.05*i}}>
               <SpotlightCard>
                 <h3 className="michroma" style={{marginBottom:8}}>{c.t}</h3>
@@ -105,7 +105,7 @@ const Home = () => {
         <SpotlightCard>
           <h2 className="michroma">About IEEE GRSS</h2>
           <p>
-            The IEEE Geoscience and Remote Sensing Society (GRSS) advances the science and engineering of remote sensing of the Earth, oceans, atmosphere, and space, including data processing and interpretation. GRSS fosters professional development, education, and collaboration among researchers and practitioners in Earth observation.
+            The IEEE Geoscience and Remote Sensing Society (GRSS) advances the science and engineering of remote sensing of the Earth, oceans, atmosphere, and space, including data processing and inte[...]
           </p>
         </SpotlightCard>
       </div>
@@ -116,7 +116,7 @@ const Home = () => {
         <SpotlightCard>
           <h2 className="michroma">About Manipal University Jaipur</h2>
           <p>
-            Manipal University Jaipur (MUJ) is a multidisciplinary university known for its strong emphasis on innovation, research, and experiential learning. The campus fosters a dynamic environment for engineering, sciences, and liberal arts, encouraging student-led chapters like IEEE GRSS to pursue impactful projects and events.
+            Manipal University Jaipur (MUJ) is a multidisciplinary university known for its strong emphasis on innovation, research, and experiential learning. The campus fosters a dynamic environment[...]
           </p>
         </SpotlightCard>
       </div>
@@ -129,7 +129,7 @@ const Home = () => {
           <p>Join our chapter, participate in events, and collaborate on real-world geospatial challenges.</p>
           <div style={{marginTop:16}}>
             <a
-              href="https://www.google.com"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSec_vKSF6-HKhhVpG9bZCsR3NB4ffYjFIRPgi3ZknOpylVblA/viewform?usp=header"
               className="michroma"
               style={{
                 display:'inline-block',
@@ -140,16 +140,18 @@ const Home = () => {
                 border:'1px solid rgba(160,200,255,0.18)',
                 boxShadow:'0 10px 30px rgba(0,0,0,0.25), 0 0 18px rgba(120,170,255,0.10) inset',
                 backdropFilter:'blur(10px)',
-                cursor:'not-allowed',
-                pointerEvents:'none',
+                cursor:'pointer',
+                pointerEvents:'auto',
                 fontWeight:'bold',
                 fontSize:'1.1rem',
                 position:'relative',
                 transition:'background 0.2s',
+                textDecoration:'none'
               }}
-              onMouseOver={e => { e.target.textContent = 'Coming Soon'; }}
+              target="_blank"
+              rel="noopener noreferrer"
+              onMouseOver={e => { e.target.textContent = 'Join now'; }}
               onMouseOut={e => { e.target.textContent = 'Join now'; }}
-              aria-disabled="true"
             >
               Join now
             </a>
@@ -162,5 +164,3 @@ const Home = () => {
 };
 
 export default Home;
-
-
