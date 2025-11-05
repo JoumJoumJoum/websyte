@@ -16,8 +16,8 @@ const Home = () => {
   return (
     <>
       {/* Hero section: centered title that scrolls with page, appears in front initially */}
-      <section className="section" style={{ minHeight: '100vh', display: 'grid', alignItems: 'start', justifyItems: 'center', paddingTop: 36 }}>
-        <div className="container" style={{ display: 'grid', gap: 12, textAlign: 'center' }}>
+      <section className="section" style={{ minHeight: '100vh', display: 'grid', alignItems: 'start', justifyItems: 'center', paddingTop: 16 }}>
+        <div className="container" style={{ display: 'grid', gap: 8, textAlign: 'center' }}>
           <motion.img
             initial={{ opacity: 0, y: 12, scale: 0.985 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -28,9 +28,7 @@ const Home = () => {
               maxWidth: '720px',
               width: '80vw',
               margin: '0 auto',
-              display: 'block',
-              marginBottom: '8px'
-              // filter: 'drop-shadow(0 0 20px rgba(120,170,255,0.6))'
+              display: 'block'
             }}
           />
           <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.15, duration: 0.6 }} style={{ marginTop: 6 }}>
