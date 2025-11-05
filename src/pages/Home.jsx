@@ -16,8 +16,8 @@ const Home = () => {
   return (
     <>
       {/* Hero section: centered title that scrolls with page, appears in front initially */}
-      <section className="section" style={{ minHeight: '100vh', display: 'grid', alignItems: 'start', justifyItems: 'center', paddingTop: 16 }}>
-        <div className="container" style={{ display: 'grid', gap: 8, textAlign: 'center' }}>
+      <section className="section" style={{ minHeight: '100vh', position: 'relative' }}>
+        <div className="container" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '100%', textAlign: 'center' }}>
           <motion.img
             initial={{ opacity: 0, y: 12, scale: 0.985 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -28,10 +28,20 @@ const Home = () => {
               maxWidth: '720px',
               width: '80vw',
               margin: '0 auto',
-              display: 'block'
+              display: 'block',
+              marginTop: '-60px' // Pull the logo up
             }}
           />
-          <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.15, duration: 0.6 }} style={{ marginTop: 6 }}>
+          <motion.p 
+            initial={{ opacity: 0 }} 
+            animate={{ opacity: 1 }} 
+            transition={{ delay: 0.15, duration: 0.6 }} 
+            style={{ 
+              marginTop: '-20px', // Negative margin to overlap with logo
+              position: 'relative',
+              zIndex: 2,
+              textShadow: '0 2px 4px rgba(0,0,0,0.3)'
+            }}>
             Advancing remote sensing through innovation, education, and community.
           </motion.p>
         </div>
