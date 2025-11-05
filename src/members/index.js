@@ -10,7 +10,8 @@ const members = [
   { name: 'Lekshmi', img: '/members/lachugrss.jpg', role: 'Creative Director', description: 'Creative Director of GRSS' },
   { name: 'Manu', img: '/members/manugrss.jpg', role: 'HR Director', description: 'HR Director of GRSS' },
   { name: 'Mehul', img: '/members/mehulgrss.jpg', role: 'Treasurer', description: 'Treasurer of GRSS' },
-  { name: 'Shagun', img: '/members/shagungrss.jpg', role: 'General Secretary', description: 'General Secretary of GRSS' }
+  { name: 'Shagun', img: '/members/shagungrss.jpg', role: 'General Secretary', description: 'General Secretary of GRSS' },
+  { name: 'Yadvendra Singh', img: '/members/ypsirgrss.jpg', role: 'Faculty Director', description: 'Faculty Director of GRSS' }
 ];
 
 export default members;
