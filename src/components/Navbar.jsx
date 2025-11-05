@@ -23,7 +23,7 @@ const Navbar = () => {
         <div style={{display:'flex', alignItems:'center', justifyContent:'space-between', gap:12}}>
           <Link to="/" style={{display:'flex', alignItems:'center', gap:10, color:'#eaf2ff', fontWeight:700, letterSpacing:0.3}}>
             <img 
-              src="/images/grss-logo.png" 
+              src="/images/grss-logo.svg" 
               alt="GRSS Logo" 
               style={{width:34, height:34, borderRadius:'50%', objectFit:'cover', boxShadow:'0 6px 16px rgba(0,0,0,0.4)'}}
             />

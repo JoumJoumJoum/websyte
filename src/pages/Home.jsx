@@ -22,7 +22,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 12, scale: 0.985 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
-            src="/images/logo.png"
+            src="/images/grss_logo.svg"
             alt="IEEE GRSS MUJ Logo"
             style={{
               maxWidth: '720px',
