@@ -42,7 +42,7 @@ const Home = () => {
               zIndex: 2,
               textShadow: '0 2px 4px rgba(0,0,0,0.3)'
             }}>
-            Advancing remote sensing through innovation, education, and community.
+          
           </motion.p>
         </div>
       </section>
