@@ -22,9 +22,11 @@ const Navbar = () => {
       <SpotlightCard className={`floating`} style={{pointerEvents:'auto', width:'min(1100px, 92%)', padding: scrolled ? '8px 16px' : '12px 18px'}}>
         <div style={{display:'flex', alignItems:'center', justifyContent:'space-between', gap:12}}>
           <Link to="/" style={{display:'flex', alignItems:'center', gap:10, color:'#eaf2ff', fontWeight:700, letterSpacing:0.3}}>
-            <div style={{width:34, height:34, borderRadius:'50%', background:'linear-gradient(135deg,#8ec5ff,#4b6fff)', display:'grid', placeItems:'center', boxShadow:'0 6px 16px rgba(0,0,0,0.4)'}}>
-              <span style={{fontSize:16, fontWeight:800}}>GR</span>
-            </div>
+            <img 
+              src="/images/grss-logo.png" 
+              alt="GRSS Logo" 
+              style={{width:34, height:34, borderRadius:'50%', objectFit:'cover', boxShadow:'0 6px 16px rgba(0,0,0,0.4)'}}
+            />
             <span>IEEE GRSS MUJ</span>
           </Link>
 
