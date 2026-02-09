@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 import { eventsData } from '../data/eventsData';
 
-const allEvents = eventsData;
+
 
 const Events = () => {
   const [selected, setSelected] = useState(null);
