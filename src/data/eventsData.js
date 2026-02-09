@@ -34,5 +34,13 @@ export const eventsData = [
     date: 'TBA',
     img: require('../events/Research Paper Submission & Internship Report/image.png'),
     desc: 'The IEEE GRSS at MUJ facilitated the submission of a research paper titled "Comparative Analysis of Machine Learning and Deep Learning Models for Land Use Classification: On UC Merced Dataset" by students Parv Aggarwal, Kushagra Gautam, Kartik Sinha, and Pranshu Pranjal, under the guidance of Dr. Yadavendra Pratap Singh. Additionally, students secured internships at IIRS Dehradun.'
+  },
+  {
+    id: 5,
+    type: 'past',
+    title: 'Innovate & Invest Workshop',
+    date: 'TBA',
+    img: require('../events/Innovate & Invest/image.png'),
+    desc: 'IEEE GRSS conducted the Innovate & Invest workshop, featuring an expert talk by Mr. Saleem Khan, AVP at Arthnirmiti. The session brought startups and financial expertise together, offering valuable insights into investment strategies and turning innovative ideas into reality.'
   }
 ];
