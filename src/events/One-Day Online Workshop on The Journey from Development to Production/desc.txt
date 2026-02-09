@@ -1,0 +1,5 @@
+The IEEE GRSS (Geoscience and Remote Sensing Society) Student Chapter of Manipal University Jaipur conducted an
+online workshop on “Journey from Development to Production” as part of its academic and community engagement
+initiatives. The event was held on 22nd December, 2025, in an online mode.
+We had the honor of hosting Mr. Pratyush Kumar Deka as our distinguished speaker. The session brought together
+students, faculty members, and dignitaries to discuss industry based learning in DevOps and cloud platforms
