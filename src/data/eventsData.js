@@ -33,7 +33,7 @@ export const eventsData = [
     title: 'Research Paper Submission & Internship',
     date: 'TBA',
     img: require('../events/Research Paper Submission & Internship Report/image.png'),
-    desc: 'The IEEE GRSS at MUJ facilitated the submission of a research paper titled "Comparative Analysis of Machine Learning and Deep Learning Models for Land Use Classification: On UC Merced Dataset" by students Parv Aggarwal, Kushagra Gautam, Kartik Sinha, and Pranshu Pranjal, under the guidance of Dr. Yadavendra Pratap Singh. Additionally, students secured internships at IIRS Dehradun.'
+    desc: 'The IEEE GRSS at MUJ facilitated the submission of a research paper titled "Comparative Analysis of Machine Learning and Deep Learning Models for Land Use Classification: On UC Merced Dataset" by students Parv Aggarwal, Kushagra Gautam, Kartik Sinha, and Pranshu Pranjal, under the guidance of Dr. Yadvendra Pratap Singh. Additionally, students secured internships at IIRS Dehradun.'
   },
   {
     id: 5,
